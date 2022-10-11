@@ -1,0 +1,186 @@
+.mobile-scroll {
+  // background: linear-gradient(107.56deg, #1c182c 0%, #181a1f 50%, #1c182c 100%);
+  background-color: $color-white;
+  color: $color-black !important;
+  position: relative;
+  padding: 5rem 0;
+  // color: $color-white;
+  position: relative;
+  // width: 100vw;
+
+  @include media("<=tablet") {
+    padding: 3rem 0;
+  }
+
+  .row {
+    @include media("<=tablet") {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .scroll-full-screen-wrapper {
+      flex: 1;
+
+      .scroll-full-screen {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include media("<=phone") {
+          &:nth-child(4) {
+            display: none;
+          }
+        }
+
+        .screen-text {
+          padding-bottom: 6rem;
+
+          @include media("<=tablet") {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .screen-heading {
+            font-size: 3rem;
+            font-weight: 700;
+            white-space: nowrap;
+            line-height: 5rem;
+            letter-spacing: 1px;
+            color: $color-black;
+
+            @include media("<=960px") {
+              font-size: 2rem;
+              line-height: 1.4rem;
+            }
+            @include media("<=tablet") {
+              font-size: 1.6rem;
+              line-height: 3rem;
+            }
+            @include media("<=phone") {
+              -webkit-text-stroke: 1px $color-black;
+              text-stroke: 1px white;
+              color: transparent;
+            }
+          }
+
+          .screen-desc {
+            max-width: 450px;
+            font-size: 18px;
+            line-height: 1.4rem;
+            font-weight: 400;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+
+            @include media("<=960px") {
+              font-size: 20px;
+              margin-top: 1.5rem;
+            }
+
+            @include media("<=phone") {
+              font-size: 16px;
+              margin-top: 1rem;
+              text-align: justify;
+            }
+          }
+
+          .screen-lists {
+            list-style: none;
+
+            @include media("<=phone") {
+              align-self: flex-start;
+            }
+
+            li {
+              display: flex;
+              align-items: flex-end;
+
+              @include media("<=tablet") {
+                align-items: center;
+              }
+
+              svg {
+                margin-right: 1rem;
+                width: 20px;
+                height: 20px;
+                padding: 1px;
+                border: 1px solid $color-black;
+
+                @include media("<=tablet") {
+                  margin-right: 0.5rem;
+                }
+              }
+
+              span {
+                @include media("<=tablet") {
+                  font-size: 1rem;
+                  text-align: left;
+                }
+              }
+
+              &:not(:last-child) {
+                margin-bottom: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .mobile-mockup-wrapper {
+      flex: 1;
+      // z-index: 2;
+
+      @include media("<=tablet") {
+        display: none;
+      }
+
+      .mobile-mockup {
+        position: sticky;
+        top: 150px;
+        transform: translateX(30%);
+        width: 450px;
+        height: 600px;
+        max-height: 100vh;
+        // border-radius: 46px;
+        padding: 16px 14px;
+        // box-shadow: $mobile-box-shadow;
+
+        @include media("<=1279px") {
+          width: 272px;
+          height: 480px;
+          transform: translateX(10%);
+          // border-radius: 46px;
+          // box-shadow: $mobile-box-shadow;
+        }
+        @include media("<=tablet") {
+          transform: translateX(0%);
+        }
+
+        .mobile-mockup-screen {
+          // background-color: $mobile-bg;
+          background-image: url(../../assets//pale-bg.svg);
+          background-repeat: no-repeat;
+          background-size: auto;
+          background-position: 100%;
+          overflow: hidden;
+          height: 100%;
+          border-radius: inherit;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &-img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}

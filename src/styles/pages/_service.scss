@@ -1,0 +1,11 @@
+.service {
+  overflow-x: hidden;
+
+  @include media("<=tablet") {
+    .services-bucket {
+      right: -10%;
+      filter: blur(2px);
+      -webkit-filter: blur(2px);
+    }
+  }
+}

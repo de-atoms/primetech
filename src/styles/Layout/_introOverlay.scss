@@ -1,0 +1,83 @@
+//IntroOverlay
+.intro-overlay {
+  .top {
+    height: 60vh;
+    height: calc(var(--vh, vh) * 60);
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    @include media("<=tablet") {
+      height: 50vh;
+      height: calc(var(--vh, vh) * 50);
+    }
+    .overlay-top {
+      position: absolute;
+      height: 100%;
+      width: 33.33vw;
+      background-color: $color-black;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      @include media("<=tablet") {
+        width: 100vw;
+      }
+
+      &:nth-child(2) {
+        left: 33.333%;
+        @include media("<=tablet") {
+          display: none;
+        }
+      }
+      &:nth-child(3) {
+        left: 66.666%;
+        @include media("<=tablet") {
+          display: none;
+        }
+      }
+    }
+  }
+  .bottom {
+    height: 40vh;
+    height: calc(var(--vh, vh) * 40);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 8;
+    @include media("<=tablet") {
+      height: 50vh;
+      height: calc(var(--vh, vh) * 50);
+    }
+
+    .overlay-bottom {
+      position: absolute;
+      height: 100%;
+      width: 33.33vw;
+      background-color: $color-black;
+      bottom: 0;
+      right: 66.666%;
+      @include media("<=tablet") {
+        right: 0;
+        width: 100vw;
+      }
+
+      &:nth-child(2) {
+        right: 33.333%;
+        @include media("<=tablet") {
+          width: 100vw;
+          top: 100%;
+          right: 0;
+          display: none;
+        }
+      }
+
+      &:nth-child(3) {
+        right: 0;
+        @include media("<=tablet") {
+          width: 100vw;
+          top: 200%;
+          display: none;
+        }
+      }
+    }
+  }
+}

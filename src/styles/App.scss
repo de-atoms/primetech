@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+@import "./abstracts/variables";
+@import "./abstracts/breakpoints";
+
+@import "./base/animation";
+@import "./base/utility";
+@import "./base/base";
+
+@import "./components/about";
+@import "./components/banner";
+@import "./components/button";
+@import "./components/cases";
+@import "./components/client";
+@import "./components/contact";
+@import "./components/cursor";
+@import "./components/feature";
+@import "./components/footer";
+@import "./components/gallery";
+@import "./components/mobileScroll";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/hire";
+@import "./components/info";
+@import "./components/navigation";
+@import "./components/niche";
+@import "./components/services";
+@import "./components/stack";
+@import "./components/testimonial";
+
+@import "./Layout/container";
+@import "./Layout/introOverlay";
+@import "./Layout/landingpage";
+
+@import "./pages/about";
+@import "./pages/design";
+@import "./pages/development";
+@import "./pages/error404";
+@import "./pages/portfolio";
+@import "./pages/requestquote";
+@import "./pages/service";

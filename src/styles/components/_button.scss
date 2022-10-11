@@ -1,0 +1,41 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  width: fit-content;
+  text-decoration: none;
+  color: $color-grey-light-2;
+  border-radius: 10px;
+  background-color: $color-tertiary-dark;
+  background-image: linear-gradient(
+    43deg,
+    $color-tertiary-dark 0%,
+    $color-secondary-dark 46%,
+    $color-yellow 100%
+  );
+  padding: 1rem 2rem;
+  transition: all 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    background-image: linear-gradient(
+      43deg,
+      $color-yellow 0%,
+      $color-tertiary-dark 46%,
+      $color-secondary-dark 100%
+    );
+    // transition: all 0.2s ease-in;
+
+    &::after {
+      transform: scaleX(1.3) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  //   text-align: left;
+}
+a:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+}

@@ -1,0 +1,83 @@
+.request {
+  &-bg {
+    background-color: #313bac;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      color: $color-white;
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+
+      @include media("<=960px") {
+        font-size: 2.5rem;
+      }
+      @include media("<=450px") {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__quote {
+    .row {
+      @include media("<=576px") {
+        padding: 0 16px;
+      }
+      @include media("<=phone") {
+        padding: 0;
+      }
+    }
+    form {
+      margin: 0 auto;
+      margin-top: -80px;
+      margin-bottom: 3rem;
+      width: 805px;
+      border-radius: 10px;
+      background-color: $color-white;
+      padding: 70px 55px;
+
+      @include media("<=576px") {
+        width: 100%;
+        padding: 30px 15px;
+      }
+
+      @include media("<=phone") {
+        border-radius: 0px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        @include media("<=576px") {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+      }
+
+      .form__item {
+        margin-bottom: 1rem;
+
+        @include media("<=576px") {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      h4 {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 0.5rem;
+
+        @include media("<=phone") {
+          font-size: 1.3rem;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

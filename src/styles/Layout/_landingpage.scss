@@ -1,0 +1,223 @@
+.service__landing {
+  background-color: $color-white;
+
+  &-bg {
+    position: relative;
+    background-color: $color-grey-light-1;
+    height: 400px;
+
+    @include media("<=tablet") {
+      height: 300px;
+    }
+
+    &-cube {
+      width: 200px;
+      position: absolute;
+      top: 40%;
+      left: 10%;
+      transform: translate(-50%, -50%);
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+    }
+  }
+
+  &-content {
+    position: relative;
+    padding: 5rem 3rem;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff7ed;
+    margin-top: -90px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: $box-shadow;
+
+    @include media("<=960px") {
+      flex-direction: column;
+      padding: 4rem 2rem 2rem;
+      gap: 2rem;
+      margin-bottom: 90px;
+      text-align: center;
+    }
+
+    @include media("<=tablet") {
+      gap: 0;
+      padding: 3rem 1rem 1rem;
+      margin-bottom: 100px;
+      text-align: center;
+    }
+    @include media("<=phone") {
+      width: 100%;
+    }
+
+    .rings {
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+
+      @include media("<=960px") {
+        display: none;
+      }
+    }
+  }
+
+  &-title-wrapper {
+    max-width: 58.3333%;
+
+    @include media("<=tablet") {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    @include media("<=1200px") {
+      font-size: 2.2rem;
+    }
+
+    @include media("<=tablet") {
+      font-size: 1.8rem;
+    }
+  }
+
+  &-button {
+    max-width: 41.6667%;
+    position: relative;
+
+    @include media("<=960px") {
+      max-width: 100%;
+    }
+
+    @include media("<=tablet") {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    @include media("<=phone") {
+      margin-bottom: 0rem;
+    }
+
+    img {
+      position: absolute;
+      right: -3rem;
+      top: -3rem;
+    }
+    a {
+      padding: 20px 45px;
+      border-radius: 5px;
+      font-size: 22px;
+      font-weight: 700;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      color: $color-white;
+      background-color: $color-tertiary-dark;
+      box-shadow: 0 25px 25px 0 rgba(49, 59, 172, 0.15);
+      transition: all 0.3s ease-out;
+
+      @include media("<=960px") {
+        font-size: 20px;
+      }
+
+      @include media("<=tablet") {
+        font-size: 18px;
+      }
+
+      &:hover {
+        transform: translateY(-0.3rem);
+        background-color: $color-tertiary-light;
+      }
+
+      @include media("<=phone") {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.portfolio__landing {
+  height: 100vh;
+  width: 100vw;
+  min-height: 0vh;
+  min-width: 0vw;
+  position: relative;
+  background-color: #000;
+  color: $color-white;
+  background-image: url(../../assets/portfolio-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease;
+  z-index: 1;
+
+  .bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 78, 188, 0.7);
+    background: linear-gradient(
+      184deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(29, 18, 71, 0.8) 100%
+    );
+    z-index: 2;
+  }
+
+  .row {
+    .landing-content {
+      z-index: 3;
+      color: $color-white;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+
+      h2 {
+        font-size: 40px;
+        text-align: center;
+        max-width: 450px;
+        font-weight: 300;
+      }
+    }
+
+    .scrolldot {
+      position: absolute;
+      bottom: 5%;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 9999;
+      height: 50px;
+      width: 25px;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      border-radius: 30px;
+      opacity: 1;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+      
+      .mini {
+        top: 7px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        height: 8px;
+        width: 8px;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        animation: mini 1.3s ease-in-out infinite;
+        transition: 0.2s ease;
+      }
+    }
+  }
+}

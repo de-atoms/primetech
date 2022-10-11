@@ -1,0 +1,69 @@
+.page {
+  .value {
+    padding: 5rem 0;
+    text-align: center;
+
+    .row {
+      flex-direction: column;
+    }
+
+    &__heading {
+      font-size: 3rem;
+      width: 55%;
+      margin: 0 auto;
+
+      @include media("<=1279px") {
+        width: 75%;
+      }
+      @include media("<=tablet") {
+        width: 85%;
+        font-size: 2.5rem;
+      }
+      @include media("<=phone") {
+        font-size: 2rem;
+      }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+      gap: 3rem;
+    }
+
+    &__content {
+      margin-top: 4rem;
+      @include media("<=tablet") {
+        margin-top: 4rem;
+      }
+
+      &-card {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+        gap: 1rem;
+
+        img {
+          height: 220px;
+          object-fit: cover;
+
+          @include media("<=1279px") {
+            height: 180px;
+          }
+        }
+
+        h2 {
+          font-size: 1.8rem;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 20px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  .hire {
+    background-color: $color-grey-light-1;
+  }
+}

@@ -1,0 +1,149 @@
+.footer {
+  padding-top: 7rem;
+  background-color: rgb(29, 27, 27);
+
+  @include media("<=tablet") {
+    padding-top: 4rem;
+  }
+
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: $color-white;
+      margin-bottom: 1rem;
+      text-align: center;
+
+      @include media("<=450px") {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #acacac;
+      margin-bottom: 3rem;
+
+      @include media("<=tablet") {
+        text-align: center;
+      }
+
+      @include media("<=450px") {
+        font-size: 1.1rem;
+      }
+
+      a {
+        color: inherit;
+      }
+    }
+
+    .form {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-auto-rows: minmax(2.5rem, auto);
+      gap: 1.5rem;
+
+      @include media("<=tablet") {
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+
+      &-input {
+        height: 100%;
+
+        .none {
+          display: none;
+
+          &.active {
+            display: block;
+          }
+        }
+
+        
+        input {
+          height: 100%;
+          width: 400px;
+          padding: 0 1rem;
+          font-size: 14px;
+          border: 1px solid $color-grey-light-2;
+          outline: none;
+          background: transparent;
+          color: $color-grey-light-1;
+
+          @include media("<=450px") {
+            width: auto;
+            padding: 1rem;
+          }
+        }
+      }
+
+      &-btn {
+        button {
+          padding: 1rem 2.5rem;
+          font-size: 1.1rem;
+          background-color: $color-tertiary-dark;
+          border: none;
+          color: $color-white;
+
+          @include media("<=450px") {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .footer__content {
+      margin-top: 7rem;
+      margin-bottom: 2rem;
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      @include media("<=450px") {
+        margin-top: 4rem;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: #acacac;
+
+        span {
+          @include media("<=768px") {
+            display: none;
+          }
+        }
+      }
+
+      .footer-logo {
+        letter-spacing: 2px;
+        font-weight: 700;
+      }
+
+      ul {
+        margin-left: auto;
+        max-width: 450px;
+        display: flex;
+        list-style: none;
+
+        @include media("<=450px") {
+          margin-left: 0;
+        }
+
+        li {
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

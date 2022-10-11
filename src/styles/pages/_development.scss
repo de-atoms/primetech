@@ -1,0 +1,228 @@
+.developments {
+  background-color: $color-black;
+  color: $color-white;
+
+  .row {
+    @include media("<=tablet") {
+      flex-direction: column;
+    }
+  }
+
+  .left {
+    width: 35%;
+    margin-right: 4%;
+
+    @include media("<=tablet") {
+      width: 75%;
+    }
+    @include media("<=450px") {
+      width: 85%;
+    }
+    @include media("<=phone") {
+      width: 100%;
+    }
+  }
+
+  &__heading {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-bottom: 3rem;
+
+    @include media("<=tablet") {
+      font-size: 18px;
+    }
+
+    @include media("<=450px") {
+      font-size: 16px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 1.2em;
+
+    @include media("<=tablet") {
+      font-size: 18px;
+    }
+
+    @include media("<=450px") {
+      font-size: 16px;
+    }
+  }
+
+  &__landing {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 250px;
+    overflow: hidden;
+
+    @include media("<=960px") {
+      padding-bottom: 200px;
+      padding-top: 100px;
+    }
+
+    @include media("<=phone") {
+      padding-bottom: 150px;
+      padding-top: 100px;
+    }
+
+    .row {
+      position: relative;
+      padding: 120px 0;
+      justify-content: center;
+
+      @include media("<=960px") {
+        padding-bottom: 0px;
+        padding-top: 50px;
+      }
+    }
+    &-heading {
+      text-align: center;
+      h1 {
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 1em;
+
+        @include media("<=1200px") {
+          font-size: 100px;
+        }
+
+        @include media("<=960px") {
+          font-size: 80px;
+        }
+
+        @include media("<=450px") {
+          font-size: 40px;
+        }
+      }
+
+      span {
+        color: #7443ff;
+        font-size: 80px;
+        font-weight: 700;
+
+        @include media("<=450px") {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .dev-lines {
+      position: absolute;
+      left: 0;
+      top: -40px;
+      right: 0;
+      perspective: 1020px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+
+      @include media("<=960px") {
+        top: 0px;
+      }
+
+      img {
+        vertical-align: middle;
+        display: inline-block;
+        max-width: 100%;
+        width: 1122px;
+      }
+    }
+  }
+
+  &__enterprise {
+    @include media("<=tablet") {
+      padding: 0;
+    }
+
+    &-right {
+      &-services {
+        margin-top: 6rem;
+        .card {
+          position: sticky;
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 2rem;
+          padding: 32px 40px 40px;
+          margin-bottom: 3rem;
+          background-color: rgb(25, 25, 27);
+          box-shadow: 10px 0 10px rgba(0, 0, 0, 80%);
+
+          @include media("<=phone") {
+            padding: 22px;
+          }
+
+          &-0 {
+            top: 130px;
+          }
+          &-1 {
+            top: 150px;
+          }
+          &-2 {
+            top: 170px;
+          }
+          &-3 {
+            top: 194px;
+          }
+          &-4 {
+            top: -50px;
+            position: relative;
+          }
+        }
+
+        img {
+          width: 60px;
+        }
+
+        h3 {
+          font-size: 26px;
+          font-weight: 700;
+          @include media("<=tablet") {
+            font-size: 22px;
+          }
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 1.4em;
+        }
+      }
+    }
+  }
+
+  &__quote {
+    .row {
+      background-color: rgb(25, 25, 27);
+      box-shadow: 10px 0 10px rgba(0, 0, 0, 80%);
+    }
+
+    &-content {
+      padding: 100px 0;
+      width: 100%;
+      text-align: center;
+
+      @include media("<=phone") {
+        padding: 50px 0;
+      }
+      h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.2em;
+        margin-bottom: 2rem;
+
+        @include media("<=tablet") {
+          font-size: 2rem;
+        }
+        @include media("<=phone") {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
