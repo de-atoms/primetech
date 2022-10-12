@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../logo";
 
 const startups = [
   {
@@ -25,13 +26,13 @@ const Business = () => {
         <div className="row">
           <div className="left business__heading">
             <h2 className="left-title">
-              Primetech for <span>Business</span>
+              <Logo /> for <span>Business</span>
             </h2>
           </div>
           <div className="right business__content">
             <p className="business__content-title">
               High-quality solutions in the design and development field will
-              help you develop your business. Primetech provides an &nbsp;
+              help you develop your business. <Logo /> provides an &nbsp;
               <span> affordable way to get your business up and scaling.</span>
             </p>
             <p className="business__content-subtitle">

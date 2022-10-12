@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import Logo from "./logo";
 import Newsletter from "./Newsletter";
 
 const Footer = () => {
@@ -19,7 +20,7 @@ const Footer = () => {
 
           <div className="footer__content">
             <Link to="/" className="footer-logo" exact="true">
-              <span>Made with ❤️ by</span> PrimeTech
+              <span>Made with ❤️ by</span> <Logo />
             </Link>
             <ul>
               <li>

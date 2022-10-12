@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as UpArrow } from "../assets/up-arrow-circle.svg";
+import Logo from "./logo";
 
 const Header = ({ menuState, setMenuState }) => {
   const [navbar, setNavbar] = useState(false);
@@ -26,7 +27,7 @@ const Header = ({ menuState, setMenuState }) => {
               exact="true"
               onClick={() => setMenuState(false)}
             >
-              PRIMETECH.
+              <Logo />
             </Link>
           </div>
           <div className="nav-toggle">

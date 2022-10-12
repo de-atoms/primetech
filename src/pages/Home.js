@@ -7,7 +7,7 @@ import Banner from "../components/Banner";
 import Cases from "../components/Cases";
 import IntroOverlay from "../components/IntroOverlay";
 // import Hero from "../components/Hero/Index";
-import Feature from "../components/Feature";
+// import Feature from "../components/Feature";
 import Client from "../components/Client";
 import Info from "../components/Info";
 import Service from "../components/Service";
@@ -88,7 +88,7 @@ const Home = ({ dimensions }) => {
           <AboutSection text={AboutText[0].home} />
           <MobileScroll />
           {/* <Hero /> */}
-          <Feature />
+          {/* <Feature /> */}
           <Client />
           <Info />
           <Service />

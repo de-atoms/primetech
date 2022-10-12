@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../logo";
 
 const startups = [
   {
@@ -25,7 +26,7 @@ const Agency = () => {
         <div className="row">
           <div className="left agency__heading">
             <h2 className="left-title">
-              Primetech for <span>Agency</span>
+              <Logo /> for <span>Agency</span>
             </h2>
           </div>
           <div className="right agency__content">
@@ -41,7 +42,7 @@ const Agency = () => {
               Our biggest impact and value comes from creating amazing websites
               for individual departments and expanding their impact across the
               whole organization. We do this by implementing a design system
-              made in primetech tailored to their unique needs so they can move
+              made in <Logo /> tailored to their unique needs so they can move
               as fast as an agency.
             </p>
           </div>

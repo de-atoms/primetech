@@ -4,6 +4,7 @@ import { ReactComponent as Home } from "../assets/home.svg";
 import { ReactComponent as SmartPhone } from "../assets/smartphone.svg";
 import { ReactComponent as ExternalLink } from "../assets/external-link.svg";
 import { Link } from "react-router-dom";
+import Logo from "./logo";
 
 const Contact = () => {
   return (
@@ -55,7 +56,7 @@ const Contact = () => {
               <h2>Schedule Meeting</h2>
               <div className="description">
                 <h4>
-                  Currently, Primetech doesn't have any meeting times available.
+                  Currently, <Logo /> doesn't have any meeting times available.
                 </h4>
                 <p>You can still request a meeting by emailing them at</p>
                 <a href="mailto: johnedet@amfacilities.com">

@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../logo";
 
 const startups = [
   {
@@ -40,7 +41,7 @@ const Startup = () => {
         <div className="row">
           <div className="left startup__heading">
             <h2 className="left-title">
-              Primetech for <span>Startups</span>
+              <Logo /> for <span>Startups</span>
             </h2>
           </div>
           <div className="right startup__content">

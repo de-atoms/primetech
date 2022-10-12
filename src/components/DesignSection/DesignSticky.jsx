@@ -31,7 +31,9 @@ const DesignSticky = () => {
               We build websites that help our clients connect with their
               customers and share the value you bring to them. Your website is
               what makes your company unique for the outside world, it’s your
-              brand story told out loud.{" "}
+              brand story told out loud. Our extensive collection of 120+
+              services is backed by the world's most talented on-demand design
+              team.{" "}
             </p>
           </div>
         </div>
