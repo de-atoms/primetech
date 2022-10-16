@@ -23,21 +23,22 @@ const homeAnimation = (completeAnimation) => {
   //create gsap timeline
   const tl = gsap.timeline();
 
-  tl.from(".line span", 1.8, {
+tl.to(".main .row h2 .line", 1, { css: { display: "flex" } })
+  .from(".line span", 0.4, {
     y: 100,
     ease: "power4.out",
-    delay: 1,
+    delay: 0.5,
     skewY: 7,
     stagger: {
       amount: 0.3,
     },
   })
-    .to(".overlay-top", 1.6, {
+    .to(".overlay-top", 1, {
       height: 0,
-      ease: "expo.inOut",
+    ease: "expo.inOut",
       stagger: 0.4,
     })
-    .to(".overlay-bottom", 1.6, {
+    .to(".overlay-bottom", 1, {
       width: 0,
       ease: "expo.inOut",
       delay: -0.8,
@@ -47,7 +48,7 @@ const homeAnimation = (completeAnimation) => {
     })
 
     .to(".intro-overlay", 0, { css: { display: "none" } })
-    .from(".case-image img", 1.6, {
+    .from(".case-image img", 1.3, {
       scale: 1.4,
       ease: "expo.inOut",
       delay: -2,

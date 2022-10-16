@@ -5,22 +5,22 @@ import { ReactComponent as RightArrow } from "../assets/arrow-right.svg";
 
 const testimonials = [
   {
-    name: "Julia Cameron",
-    title: "Creative Director, VISA",
-    image: `${require("../assets/image3.jpg")}`,
+    name: "Josiah Miracle",
+    title: "Founder, HomeFinder",
+    image: `${require("../assets/onyeomamj.jpeg")}`,
     quote:
       "It's all good. I was amazed at the quality of the Design. We've seen amazing results already.",
   },
   {
     name: "Mark Jacobs",
-    title: "Tech Lead, Google",
+    title: "Tech Lead, Levitite",
     image: `${require("../assets/image.jpg")}`,
     quote:
-      "The rebranding has really helped our business. Definitely worth the investment.",
+      "The revamp has really helped our business. Definitely worth the investment.",
   },
   {
     name: "Lisa Bearings",
-    title: "Brand Coordinator, Facebook",
+    title: "Brand Coordinator, Casima",
     image: `${require("../assets/image2.jpg")}`,
     quote:
       "The service was excellent. Absolutely wonderful! A complete redesign did it for us.",

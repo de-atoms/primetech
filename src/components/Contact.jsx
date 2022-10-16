@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as Mail } from "../assets/mail.svg";
-import { ReactComponent as Home } from "../assets/home.svg";
+// import { ReactComponent as Home } from "../assets/home.svg";
 import { ReactComponent as SmartPhone } from "../assets/smartphone.svg";
 import { ReactComponent as ExternalLink } from "../assets/external-link.svg";
 import { Link } from "react-router-dom";
@@ -31,22 +31,22 @@ const Contact = () => {
                 <Link
                   to="#"
                   onClick={(e) => {
-                    window.location.href = "mailto:primefora@gmail.com";
+                    window.location.href = "mailto:contact@webjunos.com";
                     e.preventDefault();
                   }}
                 >
-                  primefora@gmail.com
+                  contact@webjunos.com
                 </Link>
               </li>
-              <li className="detail address">
+              {/* <li className="detail address">
                 {" "}
                 <Home />
                 P2-02, Silas str, Nwaniba
-              </li>
+              </li> */}
               <li className="detail phone">
                 {" "}
                 <SmartPhone />
-                +234 901 696 3706
+                +234 808 127 1207
               </li>
             </ul>
           </div>
@@ -59,8 +59,8 @@ const Contact = () => {
                   Currently, <Logo /> doesn't have any meeting times available.
                 </h4>
                 <p>You can still request a meeting by emailing them at</p>
-                <a href="mailto: johnedet@amfacilities.com">
-                  johnedet@amfacilities.com <ExternalLink />
+                <a href="mailto: contact@webjunos.com">
+                  contact@webjunos.com <ExternalLink />
                 </a>
               </div>
             </div>

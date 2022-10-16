@@ -93,14 +93,14 @@ const Navigation = ({ dimensions, menuState, setMenuState }) => {
                 </li>
               </ul>
               <ul className="nav-info">
-                <li className="nav-info-label">Headquarters</li>
-                <li>02 silas way, Nwaniba</li>
-                <li>Uyo , Akwa-Ibom</li>
-                <li>Nigeria</li>
+                <li className="nav-info-label">Email</li>
+                <li>contact@webjunos.com</li>
+                {/* <li>Uyo , Akwa-Ibom</li>
+                <li>Nigeria</li> */}
               </ul>
               <ul className="nav-info">
                 <li className="nav-info-label">Phone</li>
-                <li>+243 (0) 81 218 25297</li>
+                <li>+243 (0) 80 812 71207</li>
               </ul>
               <ul className="nav-info">
                 <li className="nav-info-label">Legal</li>
