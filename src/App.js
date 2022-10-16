@@ -10,6 +10,7 @@ import Header from "./components/Header";
 
 //hooks
 import PageScrollToTop from "./hooks/PageScrollToTop";
+import ScrollToTopButton from "./hooks/ScrollToTop";
 import CustomCursor from "./hooks/CustomCursor";
 
 //pages
@@ -85,6 +86,7 @@ function App() {
   return (
     <>
       <PageScrollToTop />
+      <ScrollToTopButton />
       <CustomCursor />
       <Header menuState={menustate} setMenuState={setMenuState} />
       <Navigation menuState={menustate} setMenuState={setMenuState} />
@@ -95,7 +97,6 @@ function App() {
           ))}
         </Routes>
       </div>
-      {/* <Navigation dimensions={dimensions} /> */}
     </>
   );
 }

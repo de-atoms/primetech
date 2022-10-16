@@ -38,14 +38,6 @@ a {
   background-color: $color-white;
 }
 
-.arrowup {
-  position: fixed;
-  z-index: 10;
-  bottom: 5%;
-  right: 3rem;
-  cursor: pointer;
-}
-
 .scroll-to-top {
   position: fixed;
   bottom: 5%;
@@ -57,16 +49,32 @@ a {
   outline: none;
   background: none;
 
+  svg {
+    background-color: $color-grey-light-1;
+
+    #Line_1,
+    #Path_1,
+    #Path_2,
+    #Ellipse_1 {
+      stroke: $color-white;
+    }
+
+    #circle {
+      stroke: $color-white;
+      stroke-width: 0.2rem;
+    }
+  }
+
   &:hover {
     transition: all 0.2s ease-in-out;
     svg {
-      background-color: $color-black;
+      background-color: #999;
 
       #Line_1,
       #Path_1,
       #Path_2,
       #Ellipse_1 {
-        stroke: white !important;
+        stroke: $color-black !important;
       }
 
       #circle {
@@ -86,6 +94,7 @@ a {
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
     overflow: hidden;
+    background: $color-black;
 
     @media screen and (max-width: 500px) {
       width: 2.75rem;
