@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body,
@@ -16,7 +17,7 @@ html {
   // font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
   //   "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
   //   "Helvetica Neue", sans-serif;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -50,10 +51,45 @@ a {
   bottom: 5%;
   right: 5%;
   cursor: pointer;
-  z-index: 5;
+  z-index: 1000;
+  display: none;
+  border: none;
+  outline: none;
+  background: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    svg {
+      background-color: $color-black;
+
+      #Line_1,
+      #Path_1,
+      #Path_2,
+      #Ellipse_1 {
+        stroke: white !important;
+      }
+
+      #circle {
+        stroke: $color-white;
+        stroke-width: 0.2rem;
+      }
+    }
+  }
+
+  &.active {
+    display: flex;
+  }
 
   svg {
-    width: 24px;
-    height: 24px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+
+    @media screen and (max-width: 500px) {
+      width: 2.75rem;
+      height: 2.75rem;
+    }
   }
 }

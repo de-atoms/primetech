@@ -69,6 +69,7 @@
       @include media("<=tablet") {
         overflow: visible;
       }
+
       @include media("<=phone") {
         padding: 16px;
       }
@@ -115,7 +116,7 @@
 
           @include media("<=500px") {
             margin-top: 50px;
-            font-size: 1.2rem;
+            font-size: 1rem;
             line-height: 2.2rem;
           }
         }
@@ -134,7 +135,8 @@
             line-height: 2.4rem;
           }
           @include media("<=500px") {
-            font-size: 1.6rem;
+            font-size: 1.2rem;
+            font-weight: 300;
             line-height: 1.6rem;
             margin-top: 8px;
           }
@@ -145,8 +147,8 @@
           }
         }
         .case-button {
-          width: 4.5rem;
-          height: 4.5rem;
+          width: 4.2rem;
+          height: 4.2rem;
           margin-top: 2rem;
           margin-left: auto;
           margin-right: 4rem;
@@ -158,7 +160,7 @@
           overflow: hidden;
           mix-blend-mode: difference;
 
-          @include media("<=tablet") {
+          @include media("<=desktop") {
             width: 4rem;
             height: 4rem;
           }
@@ -169,6 +171,12 @@
             margin-top: 1rem;
             margin-right: 2rem;
           }
+
+          @include media("<=500px") {
+            width: 4rem;
+            height: 4rem;
+          }
+
           @include media("<=phone") {
             margin-right: 1.8rem;
           }
@@ -203,6 +211,10 @@
           .button {
             text-align: center;
             color: $color-white;
+
+            @include media("<=500px") {
+              font-size: 0.85rem;
+            }
           }
         }
       }
@@ -220,6 +232,10 @@
           height: 100%;
           width: 100%;
           object-fit: contain;
+        }
+
+        @include media("<=500px") {
+          opacity: 0.4;
         }
       }
     }

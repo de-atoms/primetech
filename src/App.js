@@ -64,7 +64,7 @@ function App() {
     let vh = dimensions.height * 0.01;
     let vw = dimensions.width * 0.001;
 
-    console.log(vw);
+    // console.log(vw);
     //set css variable vh and vw
     document.documentElement.style.setProperty("--vh", `${vh}px`);
     document.documentElement.style.setProperty("--vw", `${vw}px`);

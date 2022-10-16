@@ -38,10 +38,10 @@
         line-height: 3rem;
       }
 
-      @include media("<=phone") {
+      @include media("<=500px") {
         margin-top: 72px;
         font-size: 1.6rem;
-        line-height: 2.2rem;
+        line-height: 2rem;
       }
 
       @include media("<=320px") {
@@ -64,7 +64,7 @@
         @include media("<=tablet") {
           height: 48px;
         }
-        @include media("<=phone") {
+        @include media("<=500px") {
           height: 32px;
         }
         span {
