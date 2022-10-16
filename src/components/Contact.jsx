@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as Mail } from "../assets/mail.svg";
-// import { ReactComponent as Home } from "../assets/home.svg";
+import { ReactComponent as Home } from "../assets/home.svg";
 import { ReactComponent as SmartPhone } from "../assets/smartphone.svg";
 import { ReactComponent as ExternalLink } from "../assets/external-link.svg";
 import { Link } from "react-router-dom";
@@ -38,11 +38,11 @@ const Contact = () => {
                   contact@webjunos.com
                 </Link>
               </li>
-              {/* <li className="detail address">
+              <li className="detail address">
                 {" "}
                 <Home />
                 P2-02, Silas str, Nwaniba
-              </li> */}
+              </li>
               <li className="detail phone">
                 {" "}
                 <SmartPhone />
