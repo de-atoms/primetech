@@ -231,9 +231,9 @@ const RequestQuote = () => {
                       label="Skype"
                     />
                     <FormControlLabel
-                      value="slack"
+                      value="Telegram"
                       control={<Radio />}
-                      label="Slack"
+                      label="Telegram"
                     />
                     <FormControlLabel
                       value="zoom"
@@ -244,11 +244,6 @@ const RequestQuote = () => {
                       value="google-meet"
                       control={<Radio />}
                       label="Google Meet"
-                    />
-                    <FormControlLabel
-                      value="email"
-                      control={<Radio />}
-                      label="Email"
                     />
                     <FormControlLabel
                       value="whatsapp"
