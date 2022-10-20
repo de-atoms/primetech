@@ -389,7 +389,7 @@ const RequestQuote = () => {
                     variant="outlined"
                     type="text"
                     error={!!touched.duration && !!errors.duration}
-                    helperText="(in weeks)"
+                    helperText="(in weekss)"
                     fullWidth
                   />
                 </div>
