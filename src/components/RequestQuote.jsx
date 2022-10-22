@@ -85,12 +85,12 @@ const RequestQuote = () => {
               <form ref={form} onSubmit={handleSubmit}>
                 <FormControl>
                   <h4>Basic Info About You</h4>
-                  <FormLabel
+                  {/* <FormLabel
                     id="demo-controlled-radio-buttons-group"
                     sx={{ mb: 2 }}
                   >
                     Please tell me a little bit about yourself.
-                  </FormLabel>
+                  </FormLabel> */}
                 </FormControl>
 
                 <div className="form__item grid">
