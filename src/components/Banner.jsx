@@ -16,7 +16,7 @@ const Banner = () => {
             </div>
           </h2>
           <div className="btn-row">
-            <NavLink to="/about-us" exact>
+            <NavLink to="/about-us">
               More about us <RightArrow />{" "}
             </NavLink>
           </div>

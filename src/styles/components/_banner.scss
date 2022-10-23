@@ -40,13 +40,13 @@
 
       @include media("<=500px") {
         margin-top: 72px;
-        font-size: 1.6rem;
-        line-height: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.85rem;
       }
 
-      @include media("<=320px") {
+      @include media("<=380px") {
         margin-top: 72px;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         line-height: 1rem;
       }
 

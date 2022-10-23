@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const caseStudies = [
   {
@@ -35,14 +35,12 @@ const Cases = () => {
       <div className="container-fluid">
         <div className="row overflow-hidden">
           {caseStudies.map((caseItem) => (
-            <Link to={caseItem.link} exact className="case" key={caseItem.id}>
+            <NavLink to={caseItem.link} className="case" key={caseItem.id}>
               <div className="case-details">
                 <span>{caseItem.subtitle}</span>
                 <h2>{caseItem.title}</h2>
                 <div className="case-button">
-                  <Link to={caseItem.link} className="button">
-                    {caseItem.btn}
-                  </Link>
+                  <p className="button">{caseItem.btn}</p>
                 </div>
               </div>
               <div className="case-image">
@@ -51,7 +49,7 @@ const Cases = () => {
                   alt={caseItem.title}
                 />
               </div>
-            </Link>
+            </NavLink>
           ))}
         </div>
       </div>

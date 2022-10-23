@@ -34,6 +34,7 @@ const Newsletter = () => {
                 type="email"
                 name="email"
                 placeholder="Enter your mail"
+                required
               />
             </div>
             <ValidationError
